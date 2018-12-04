@@ -1,5 +1,7 @@
 This is a small repository written to help someone improve a piece of code which was sent to me.
 
-Run the tests using `npm run test`
+## Getting started
 
-Use `npm run test:watch` while making changes to the code
+1. yarn install
+
+2. Run the tests using `npm run test` or `npm run test:watch` (reruns the tests after code changes)
