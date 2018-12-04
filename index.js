@@ -11,7 +11,7 @@
  *    e.g. { food: "Spaghetti", gender: "Fille" }
  */
 
-function translateCustomisations(customisationTranslations, customisations) {
+function translateCustomisations(translations, customisations) {
   const itemCustomisationArray = Object.entries(customisations).reduce((all, item, index) => {
     all[index] = item.join('::');
     return all;
@@ -20,7 +20,7 @@ function translateCustomisations(customisationTranslations, customisations) {
   const translatedCustomisations = {};
 
   itemCustomisationArray.forEach(item => {
-    customisationTranslations.forEach(translation => {
+    translations.forEach(translation => {
       if (translation.id.includes(item)) {
         item.split('::');
         let array = item.split('::');
